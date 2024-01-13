@@ -1,16 +1,11 @@
-# memory_game
+# Memory game
 
-Jogo da memória.
+🎃🎃 Jogo da memória - Halloween.
 
-## Getting Started
+Este projeto foi construído com o framework Flutter e utilizando a arquitetura DDD (Driven Domain Design).
 
-This project is a starting point for a Flutter application.
+<<<<<<< HEAD
+=======
+Design feito a partir do desafio 11 da Codelândia: https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=29500%3A2&mode=dev
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+>>>>>>> 4aa23705792d052712d7f02553548b871d537910
