@@ -13,7 +13,7 @@ Vitória: Continue jogando até encontrar todos os pares e vencer o jogo!
 O design desta página foi inspirado no décimo primeiro desafio dos Desafios de Frontend da Codelândia. <a href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=29500%3A2&mode=dev)https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=29500%3A2&mode=dev" target="_blank"> Confira o desafio 11.</a>
 
 ### Acesse o Jogo da Memória
-Se diverta com o jogo em: <a href="https://isabelafagundes.github.io/a-viagem-de-chihiro-com-FLUTTER/" target="_blank"> Git Hub Pages</a>
+Se diverta com o jogo em: <a href="https://isabelafagundes.github.io/jogo-da-memoria-com-FLUTTER/" target="_blank"> Git Hub Pages</a>
 
 ### Captura de Tela
 ![image](https://github.com/isabelafagundes/jogo-da-memoria-com-FLUTTER/assets/104397121/e9db4b59-b3de-46aa-92e2-dbda8e611501)
