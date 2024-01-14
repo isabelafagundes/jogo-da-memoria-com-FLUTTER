@@ -17,6 +17,7 @@ Se diverta com o jogo em: <a href="https://isabelafagundes.github.io/a-viagem-de
 
 ### Captura de Tela
 ![image](https://github.com/isabelafagundes/jogo-da-memoria-com-FLUTTER/assets/104397121/e9db4b59-b3de-46aa-92e2-dbda8e611501)
+
 ![image](https://github.com/isabelafagundes/jogo-da-memoria-com-FLUTTER/assets/104397121/7ef493e9-e748-4933-830b-a441add046ed)
 
 #
