@@ -1,4 +1,4 @@
-### Memory Game - Halloween Edition 🎃🎃
+# Memory Game - Halloween Edition 🎃🎃
 
 ### Descrição
 Bem-vindo ao Jogo da Memória - Halloween Edition! Este projeto é uma implementação divertida e interativa do clássico jogo da memória, desenvolvido com o framework Flutter e seguindo os princípios da arquitetura DDD (Driven Domain Design).
