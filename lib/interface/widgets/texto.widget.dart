@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:memory_game/interface/contants.dart';
+import 'package:memory_game/interface/constants.dart';
 
 class TextoWidget extends StatelessWidget {
   final String texto;

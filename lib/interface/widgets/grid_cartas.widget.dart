@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:memory_game/application/domain/carta.dart';
-import 'package:memory_game/interface/contants.dart';
+import 'package:memory_game/interface/constants.dart';
 
 class GridCartasWidget extends StatelessWidget {
   final int quantidadeCartas;
@@ -15,10 +15,12 @@ class GridCartasWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width * .8,
+    double largura = MediaQuery.of(context).size.width;
+    return SizedBox(
+      width: largura <= 500 ? largura * .9 : largura * .8,
       child: GridView.builder(
         shrinkWrap: true,
+        physics: const NeverScrollableScrollPhysics(),
         itemCount: quantidadeCartas,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: _obterQuantidadePorLinha(context),

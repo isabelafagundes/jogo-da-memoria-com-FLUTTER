@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:memory_game/interface/contants.dart';
+import 'package:memory_game/interface/constants.dart';
 import 'package:memory_game/interface/widgets/botao.widget.dart';
 import 'package:memory_game/interface/widgets/texto.widget.dart';
 

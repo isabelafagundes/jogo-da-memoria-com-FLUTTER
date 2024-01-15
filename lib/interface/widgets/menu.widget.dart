@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:memory_game/application/domain/dificuldade.dart';
-import 'package:memory_game/interface/contants.dart';
+import 'package:memory_game/interface/constants.dart';
 import 'package:memory_game/interface/widgets/texto.widget.dart';
 
 class MenuWidget extends StatefulWidget {

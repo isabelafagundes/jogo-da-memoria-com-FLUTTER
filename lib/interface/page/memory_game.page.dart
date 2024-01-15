@@ -5,7 +5,7 @@ import 'package:memory_game/application/component/jogo.component.dart';
 import 'package:memory_game/application/domain/carta.dart';
 import 'package:memory_game/application/domain/dificuldade.dart';
 import 'package:memory_game/infrastructure/repo/cartas.repo.dart';
-import 'package:memory_game/interface/contants.dart';
+import 'package:memory_game/interface/constants.dart';
 import 'package:memory_game/interface/widgets/carta.widget.dart';
 import 'package:memory_game/interface/widgets/grid_cartas.widget.dart';
 import 'package:memory_game/interface/widgets/menu.widget.dart';
@@ -21,8 +21,6 @@ class MemoryGamePage extends StatefulWidget {
 
 class _MemoryGamePageState extends State<MemoryGamePage> {
   final JogoComponent _component = JogoComponent();
-  Carta? _primeiraCarta;
-  Carta? _segundaCarta;
 
   @override
   void initState() {
@@ -92,7 +90,7 @@ class _MemoryGamePageState extends State<MemoryGamePage> {
                           ],
                         ),
                       _component.jogo!.dificuldade == Dificuldade.DIFICIL
-                          ? SizedBox()
+                          ? const SizedBox()
                           : SizedBox(height: espacamento * 5),
                       Transform.scale(
                         scale: .9,
