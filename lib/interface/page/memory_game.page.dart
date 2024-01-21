@@ -38,6 +38,8 @@ class _MemoryGamePageState extends State<MemoryGamePage> {
     return Scaffold(
       backgroundColor: Colors.black54,
       body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [amarelo.withOpacity(.6), Colors.transparent],
@@ -45,14 +47,14 @@ class _MemoryGamePageState extends State<MemoryGamePage> {
             end: Alignment.center,
           ),
           image: DecorationImage(
-            fit: MediaQuery.of(context).size.width > 900 ? BoxFit.fitWidth : BoxFit.fitHeight,
+            fit: MediaQuery.of(context).size.width <= 500 ? BoxFit.fitHeight : BoxFit.fill,
             image: const AssetImage("assets/pngs/background.png"),
           ),
         ),
-        height: MediaQuery.of(context).size.height,
-        width: MediaQuery.of(context).size.width,
         child: SingleChildScrollView(
           child: Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [amarelo.withOpacity(.4), Colors.transparent],
@@ -60,44 +62,46 @@ class _MemoryGamePageState extends State<MemoryGamePage> {
                 end: Alignment.center,
               ),
             ),
-            child: Column(
-              children: _component.jogo == null
-                  ? [
-                      const CircularProgressIndicator(),
-                    ]
-                  : [
-                      SizedBox(height: espacamento * 3),
-                      TextoWidget(
-                        texto: 'Jogo da Memoria',
-                        tamanhoFonte: 62,
-                        cor: amarelo,
-                        sombras: [sombraLaranja],
-                      ),
-                      SizedBox(height: espacamento * 4),
-                      MenuWidget(
-                        aoClicar: (dificuldade) async => await _component.iniciarJogo(dificuldade),
-                      ),
-                      if (_component.jogo!.dificuldade == Dificuldade.DIFICIL)
-                        Column(
-                          children: [
-                            SizedBox(height: espacamento * 2),
-                            TextoWidget(
-                              texto: "${_component.tentativas} chances",
-                              tamanhoFonte: 40,
-                              cor: amarelo,
-                              sombras: [sombraLaranja],
-                            ).animate().fade(),
-                          ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: _component.jogo == null
+                    ? [
+                        const CircularProgressIndicator(),
+                      ]
+                    : [
+                        SizedBox(height: espacamento * 3),
+                        TextoWidget(
+                          texto: 'Jogo da Memoria',
+                          tamanhoFonte: 62,
+                          cor: amarelo,
+                          sombras: [sombraLaranja],
                         ),
-                      _component.jogo!.dificuldade == Dificuldade.DIFICIL
-                          ? const SizedBox()
-                          : SizedBox(height: espacamento * 5),
-                      Transform.scale(
-                        scale: .9,
-                        child: _obterGridCartas,
-                      ),
-                      SizedBox(height: espacamento * 4),
-                    ],
+                        SizedBox(height: espacamento * 4),
+                        MenuWidget(
+                          aoClicar: (dificuldade) async => await _component.iniciarJogo(dificuldade),
+                        ),
+                        if (_component.jogo!.dificuldade == Dificuldade.DIFICIL)
+                          Column(
+                            children: [
+                              SizedBox(height: espacamento * 2),
+                              TextoWidget(
+                                texto: "${_component.tentativas} chances",
+                                tamanhoFonte: 40,
+                                cor: amarelo,
+                                sombras: [sombraLaranja],
+                              ).animate().fade(),
+                            ],
+                          ),
+                        _component.jogo!.dificuldade == Dificuldade.DIFICIL
+                            ? const SizedBox()
+                            : SizedBox(height: espacamento * 5),
+                        Transform.scale(
+                          scale: .9,
+                          child: _obterGridCartas,
+                        ),
+                        SizedBox(height: espacamento * 4),
+                      ],
+              ),
             ),
           ),
         ),
